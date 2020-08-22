@@ -29,5 +29,7 @@ Combines latest linuxserver/qbittorrent with nordvpn
           - USER=USERNAME                   # Required
           - PASS=PASSWORD                   # Required
           - TECHNOLOGY=NordLynx
-          - CONNECT=Canada
+          - CONNECT=--group p2p Canada
+          - NETWORK=192.168.10.0/24         # Required if you want to access WEBUI_PORT when KILL_SWITCH=on
+          - KILL_SWITCH=on
 ```
