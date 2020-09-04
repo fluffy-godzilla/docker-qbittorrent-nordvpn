@@ -3,7 +3,7 @@ FROM linuxserver/qbittorrent:latest
 LABEL maintainer="fluffy-godzilla"
 
 HEALTHCHECK --interval=1m --timeout=20s --start-period=1m \
-  CMD if test $( curl -m 10 -s https://api.nordvpn.com/vpn/check/full | jq -r '.["status"]' ) = "Protected" ; then exit 0; else nordvpn connect ${CONNECT} ; status=$?; pkill -9 qbittorrent-nox ; exit $status; fi
+  CMD /health-check.sh
 
 RUN addgroup --system vpn && \
     apt-get update && apt-get upgrade -y && \

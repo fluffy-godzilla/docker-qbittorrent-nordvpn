@@ -30,6 +30,6 @@ Combines latest linuxserver/qbittorrent with nordvpn
           - PASS=PASSWORD                   # Required
           - TECHNOLOGY=NordLynx
           - CONNECT=--group p2p Canada
-          - KILL_SWITCH=on
+          - KILL_SWITCH=on                  # on|custom|off
           - PORTS=8080
 ```
