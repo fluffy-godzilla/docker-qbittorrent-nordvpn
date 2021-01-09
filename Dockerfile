@@ -1,6 +1,6 @@
 FROM linuxserver/qbittorrent:latest
 
-ARG NORDVPN_VERSION=3.8.1
+ARG NORDVPN_VERSION=3.8.9
 
 LABEL maintainer="fluffy-godzilla"
 
