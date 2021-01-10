@@ -124,6 +124,7 @@ fi
 
 pkill nordvpnd 
 rm -f /run/nordvpnd.sock
+mkdir -p /run/nordvpn/
 sg vpn -c nordvpnd & 
 
 while [ ! -S /run/nordvpnd.sock ]; do
